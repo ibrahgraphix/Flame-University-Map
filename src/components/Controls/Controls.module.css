@@ -1,0 +1,52 @@
+.controlsContainer {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  pointer-events: auto;
+  z-index: 30;
+}
+
+.infoCard {
+  position: relative;
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  pointer-events: auto;
+}
+
+.infoCard h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.muted {
+  color: #6b7280;
+  margin: 6px 0;
+}
+
+.infoRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  background: #f3f4f6;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.smallMuted {
+  color: #6b7280;
+  font-size: 12px;
+  margin-right: 6px;
+}

@@ -1,0 +1,90 @@
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.svgWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.zoomControls {
+  position: absolute;
+  top: 16px; /* aligned with location box */
+  right: 16px; /* moved to right */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 100;
+}
+
+.zoomBtn {
+  background: white;
+  border: none;
+  width: 50px; /* bigger */
+  height: 50px; /* bigger */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 28px; /* bigger + and - */
+  color: black;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.zoomBtn:hover {
+  background: #f5f5f5;
+}
+
+.navControls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.startBtn {
+  background: linear-gradient(
+    to right,
+    var(--flame-blue),
+    var(--flame-light-blue)
+  );
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cancelBtn {
+  background: linear-gradient(to right, #ef4444, #f97316);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.startBtn:hover,
+.cancelBtn:hover {
+  opacity: 0.9;
+}
+
+/* optional small helper to ensure the marker is above everything */
+[aria-label="current-location"] {
+  pointer-events: none;
+}

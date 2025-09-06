@@ -1,0 +1,34 @@
+.mapContainer {
+  position: relative; /* allow positioning of child controls */
+  width: 100%;
+  height: calc(
+    100vh - 100px
+  ); /* adjust 100px if you have a fixed header/footer height */
+  overflow: hidden;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svgWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.controlBtn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 18px;
+}

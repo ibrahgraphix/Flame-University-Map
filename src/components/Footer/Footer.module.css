@@ -1,0 +1,22 @@
+.footer {
+  background: linear-gradient(90deg, #000000, #001f4d); /* black to dark blue */
+  height: 60px; /* Taller footer */
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Center text horizontally */
+  text-align: center;
+  color: white; /* make text white */
+  font-size: 13px;
+  border-top: none; /* remove light border */
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.12); /* subtle top shadow */
+  width: 100%;
+}
+
+.footer a {
+  color: #cfe6ff; /* light blue for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
