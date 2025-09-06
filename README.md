@@ -1,15 +1,3 @@
-src/
-components/
-Header.jsx
-MapContainer.jsx
-Controls.jsx
-Footer.jsx
-pages/
-Home.jsx
-styles/
-Header.module.css
-MapContainer.module.css
-Controls.module.css
-Footer.module.css
-App.jsx
-index.js
+The **Flame University Map** is a simple web app that helps students, staff, and guests navigate the university campus. It uses React with JavaScript and CSS to display an interactive map where users can find important locations like classrooms, hostels, offices, and cafeterias. The goal is to make it easy for anyone on campus to know where to go.
+
+Made with React and CSS
